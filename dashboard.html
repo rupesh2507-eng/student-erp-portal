@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Student ERP Portal</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <div class="panel">
+        <div class="heading">
+            <h2>Student ERP</h2>
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <a href="dashboard.html" class="link"><i class="fa-regular fa-house"></i>Dashboard</a>
+        <a href="profile.html" class="link"><i class="fa-regular fa-circle-user"></i>Profile</a>
+        <a href="attandance.html" class="link"><i class="fa-regular fa-calendar-days"></i>Attandane Record</a>
+        <a href="#" class="link"><i class="fa-regular fa-clock"></i>Daily Punch Record</a>
+        <a href="#" class="link"><i class="fa-solid fa-book-open"></i>Courses</a>
+        <a href="#" class="link"><i class="fa-regular fa-calendar"></i>Time Table</a>
+        <a href="#" class="link"><i class="fa-solid fa-chart-simple"></i>Results</a>
+        <a href="#" class="link"><i class="fa-solid fa-wallet"></i>Fees</a>
+        <a href="#" class="link"><i class="fa-regular fa-bell"></i>Notices</a>
+        <a href="#" class="link"><i class="fa-solid fa-gear"></i></i>Setting</a>
+    </div>
+    <div class="dashboard">
+        <div class="navbar">
+            <div class="msg">
+                <h2>Welcome Back!</h2>
+                <p>Here's your Academic Overview</p>
+            </div>
+            <a href="index.html">Log Out<i class="fa-solid fa-right-from-bracket"></i></a>
+        </div>
+        <div class="info1">
+            <div class="attandance">
+                <i class="fa-solid fa-people-group"></i>
+                <h3>Attandance</h3>
+                <p>85%</p>
+            </div>
+            <div class="dues">
+                <i class="fa-solid fa-indian-rupee-sign"></i>
+                <h3>Student Dues</h3>
+                <p>100000</p>
+            </div>
+            <div class="courses">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <h3>Courses</h3>
+                <p>7 Subjects</p>
+            </div>
+            <div class="result">
+                <i class="fa-regular fa-star"></i>
+                <h3>Result</h3>
+                <p>9.5</p>
+            </div>
+            <div class="hostel">
+                <i class="fa-solid fa-hotel"></i>
+                <h3>Hostel</h3>
+                <a href="#">Apply hostel</a>
+            </div>
+        </div>
+        <div class="info2">
+            <div class="classes">
+                <div class="select">
+                    <h3>Upcoming Classes</h3>
+                    <select id="day">
+                        <option>Select Day</option>
+                        <option>Monday</option>
+                        <option>Tuesday</option>
+                        <option>Wednesday</option>
+                        <option>Thrusday</option>
+                        <option>Friday</option>
+                        <option>Saturday</option>
+                        <option>Sunday</option>
+                    </select>
+                </div>
+                <div class="sub">
+                    <p>Please Select A Day!!</p>
+                </div>
+            </div>
+            <div class="notices">
+                <h3>Recent Notices</h3>
+                <i class="fa-solid fa-bullhorn"></i><a href="#">Exam Sheduled Released</a><br><br>
+                <i class="fa-solid fa-bullhorn"></i><a href="#">Fee Deadline Approaching</a><br><br>
+                <i class="fa-solid fa-bullhorn"></i><a href="#">Holiday Announced</a>
+            </div>
+        </div>
+        <div class="info3">
+            <h3>Quick Actions</h3><br>
+            <div class="links">
+                <a href="#" id="time"><i class="fa-regular fa-calendar-days"></i>Time table</a>
+                <a href="#" id="res"><i class="fa-solid fa-chart-simple"></i>Results</a>
+                <a href="#" id="pay"><i class="fa-solid fa-indian-rupee-sign"></i>Pay Fees</a>
+                <a href="#" id="hos"><i class="fa-solid fa-hotel"></i>Hostels</a>
+                <a href="#" id="not"><i class="fa-regular fa-bell"></i>Notices</a>
+            </div>
+        </div>
+        <div class="extra"></div>
+    </div>
+    <script src="dashboard.js"></script>
+</body>
+</html>

@@ -1,0 +1,142 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    border: border-box;
+}
+body{
+    background-image: url("back-img.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+.login-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.container{
+    height: 49vh;
+    width: 40vh;
+    border: 2px solid lightgray;
+    background-color: rgba(255, 255, 255, 0.75);
+    box-shadow: 0 8px 30px rgba(18, 53, 91, 0.25);
+    padding: 1.2rem;    
+    border-radius: 1rem;
+}
+.container h2{
+    color: #12355B;
+    font-size: 2rem;
+    padding: 5px;
+}
+.container p{
+    color: #343A40;
+    padding: 5px;
+}
+p{
+    color: #343A40;
+}
+form input,select,button,option{
+    min-width: 100%;
+    height: 2rem;
+    padding-left: 5px;
+    border: 1px solid lightgray;
+    border-radius: 0.75rem;
+}
+
+.remember{
+    min-width: 1%;
+    height:unset;
+    margin: 0.5rem;
+}
+label a{
+    text-decoration: none;
+    color: #12355B;
+}
+button{
+    background-color: #12355B;
+    color: white;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+button:hover{
+    background-color: #F4B942;
+    transform: translateY(-5px);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);
+}
+pre{
+    font-size: 0.85rem;
+}
+
+
+
+
+@media (max-width: 600px) {
+
+    .container {
+        width: 90%;
+        height: auto;
+    }
+
+    .container h2 {
+        font-size: 1.6rem;
+    }
+
+    .container p {
+        font-size: 0.9rem;
+    }
+
+    form input,
+    select,
+    button {
+        width: 100%;
+    }
+
+    pre {
+        white-space: normal;
+        font-size: 0.75rem;
+    }
+}
+@media (max-width: 600px) {
+    pre {
+        font-size: 0.7rem;
+        white-space: normal;
+    }
+}
+@media (max-width: 600px) {
+
+    body {
+        min-height: 100vh;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .container {
+        width: 80%;
+        height: auto;
+        padding: 15px;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    pre {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        white-space: nowrap;
+        font-size: 0.7rem;
+    }
+
+    .remember {
+        min-width: 14px;
+        width: 14px;
+        height: 14px;
+        margin: 0 5px 0 0;
+    }
+
+    pre a {
+        font-size: 0.7rem;
+        margin-left: auto;
+    }
+}
