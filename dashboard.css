@@ -768,7 +768,7 @@ a:active{
 }
 
 .hostel p {
-    font-size: .7rem;
+    font-size: .7rem !important;
     margin-top: 4px;
     padding: 0;
     line-height: 1.1;
