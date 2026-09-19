@@ -489,7 +489,13 @@ a:active{
     transition: all 2s ease;
 }
 
-/* NORMAL PHONE MODE */
+/* =====================================================
+   PROFESSIONAL RESPONSIVE DESIGN
+   NORMAL MOBILE + MOBILE DESKTOP SITE
+   ===================================================== */
+
+
+/* ================= NORMAL MOBILE ================= */
 
 @media (max-width: 600px) {
 
@@ -504,12 +510,13 @@ a:active{
         position: fixed;
         top: 0;
         left: 0;
-        width: 55px;
+        width: 58px;
         height: 100vh;
         padding: 5px;
         box-sizing: border-box;
         z-index: 1000;
         overflow: hidden;
+        transition: width 0.3s ease;
     }
 
     .heading {
@@ -525,7 +532,7 @@ a:active{
 
     .heading i {
         font-size: 1rem;
-        padding: 6px;
+        padding: 7px;
         margin: 0;
     }
 
@@ -546,23 +553,23 @@ a:active{
         margin: 0;
     }
 
-    .dashboard {
-        width: calc(100% - 63px);
-        margin-left: 63px;
+    .dashboard,
+    .dashboard.reverse {
+        width: calc(100% - 66px);
+        margin-left: 66px;
         box-sizing: border-box;
+        transition: margin-left 0.3s ease;
     }
 
-    .dashboard.reverse {
-        margin-left: 63px;
-    }
+    /* NAVBAR */
 
     .navbar {
         width: 100%;
+        min-height: 62px;
         height: auto;
-        min-height: 60px;
-        padding: 7px;
+        padding: 8px;
         box-sizing: border-box;
-        border-radius: 9px;
+        border-radius: 10px;
     }
 
     .msg h2 {
@@ -575,19 +582,21 @@ a:active{
     }
 
     .navbar a {
-        font-size: .65rem;
-        padding: 5px;
+        font-size: .62rem;
+        padding: 5px 6px;
         white-space: nowrap;
     }
 
     .navbar i {
-        margin-left: 4px;
         font-size: .7rem;
+        margin-left: 4px;
     }
+
+    /* OVERVIEW CARDS */
 
     .info1 {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, minmax(0, 1fr));
         gap: 7px;
         padding: 7px;
         box-sizing: border-box;
@@ -600,10 +609,11 @@ a:active{
     .hostel {
         width: 100%;
         height: 110px;
+        min-width: 0;
         margin: 0;
-        padding: 5px;
+        padding: 6px;
         box-sizing: border-box;
-        border-radius: 9px;
+        border-radius: 10px;
     }
 
     .attandance i,
@@ -624,6 +634,8 @@ a:active{
         font-size: .68rem;
         line-height: 1.1;
         text-align: center;
+        margin: 0;
+        padding: 0;
     }
 
     .attandance p,
@@ -631,20 +643,24 @@ a:active{
     .courses p,
     .result p,
     .hostel p {
-        font-size: .7rem;
+        font-size: .7rem !important;
+        line-height: 1.1;
         margin-top: 4px;
         padding: 0;
+        text-align: center;
     }
 
     .hostel {
         grid-column: 1 / -1;
-        width: 110px;
+        width: 50%;
         justify-self: center;
     }
 
+    /* CLASSES + NOTICES */
+
     .info2 {
-        height: auto;
         width: 100%;
+        height: auto;
         display: flex;
         flex-direction: column;
         gap: 7px;
@@ -655,9 +671,9 @@ a:active{
     .classes {
         width: 100%;
         height: 145px;
-        padding: 7px;
+        padding: 8px;
         box-sizing: border-box;
-        border-radius: 9px;
+        border-radius: 10px;
     }
 
     .classes h3 {
@@ -672,23 +688,23 @@ a:active{
     }
 
     .select select {
-        width: 85px;
+        width: 88px;
         height: 27px;
         font-size: .65rem;
     }
 
     .sub {
-        font-size: .7rem;
-        padding-left: 4px;
+        font-size: .68rem;
         line-height: 1.25;
+        padding-left: 4px;
         white-space: pre-line;
     }
 
     .notices {
         width: 100%;
-        padding: 7px;
+        padding: 8px;
         box-sizing: border-box;
-        border-radius: 9px;
+        border-radius: 10px;
     }
 
     .notices h3 {
@@ -708,13 +724,15 @@ a:active{
         margin-right: 3px;
     }
 
+    /* QUICK ACTIONS */
+
     .info3 {
         width: calc(100% - 14px);
         height: auto;
         margin: 0 7px 7px;
         padding: 8px;
         box-sizing: border-box;
-        border-radius: 9px;
+        border-radius: 10px;
     }
 
     .info3 h3 {
@@ -724,7 +742,7 @@ a:active{
 
     .links {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, minmax(0, 1fr));
         gap: 5px;
         padding: 5px;
     }
@@ -743,55 +761,31 @@ a:active{
     .extra {
         height: 15px;
     }
-
-    .hostel {
-    width: 100%;
-    height: 110px;
-    margin: 0;
-    grid-column: auto;
-    }
-
-    .hostel {
-    width: 100%;
-    height: 110px;
-    margin: 0;
-    grid-column: 1 / -1;
-    justify-self: center;
 }
 
-.hostel h3 {
-    font-size: .68rem;
-    line-height: 1.1;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-}
 
-.hostel p {
-    font-size: .7rem !important;
-    margin-top: 4px;
-    padding: 0;
-    line-height: 1.1;
-}
-
-.hostel i {
-    font-size: .9rem;
-    padding: 6px;
-    margin-bottom: 5px;
-}
-}
-
-/* CHROME PHONE - DESKTOP SITE MODE */
+/* =====================================================
+   MOBILE PHONE USING CHROME "DESKTOP SITE"
+   ===================================================== */
 
 @media (pointer: coarse) and (min-width: 601px) {
+
+    html,
+    body {
+        width: 100%;
+        min-height: 100%;
+        overflow-x: hidden;
+    }
+
+    /* SIDEBAR */
 
     .panel {
         position: fixed;
         top: 0;
         left: 0;
-        width: 220px;
+        width: 210px;
         height: 100vh;
-        padding: 10px;
+        padding: 8px;
         box-sizing: border-box;
         z-index: 1000;
         overflow-y: auto;
@@ -800,47 +794,50 @@ a:active{
 
     .heading {
         width: 90%;
-        height: 70px;
-        padding: 10px;
+        height: 75px;
+        padding: 8px;
     }
 
     .heading h2 {
-        font-size: 1.2rem;
+        display: block;
+        font-size: 1.15rem;
     }
 
     .heading i {
-        font-size: 1rem;
+        font-size: .95rem;
         padding: 6px;
     }
 
     .panel a {
         font-size: .85rem;
         padding: 9px;
+        margin-bottom: 2px;
     }
 
     .panel i {
-        font-size: 1rem;
-        margin-right: 8px;
+        font-size: .95rem;
+        margin-right: 7px;
     }
 
+    /* DASHBOARD */
+
     .dashboard {
-        margin-left: 235px;
-        width: calc(100% - 235px);
+        width: calc(100% - 225px);
+        margin-left: 225px;
         box-sizing: border-box;
         transition: margin-left 0.3s ease;
     }
 
-    /* COLLAPSED PANEL */
+    /* COLLAPSED SIDEBAR */
 
     .panel.collapsed {
         width: 55px;
-        transition: width 0.3s ease;
     }
 
     .panel.collapsed .heading {
         width: 100%;
-        justify-content: center;
         padding: 0;
+        justify-content: center;
     }
 
     .panel.collapsed .heading h2 {
@@ -852,16 +849,41 @@ a:active{
     }
 
     .dashboard.reverse {
-        margin-left: 70px;
         width: calc(100% - 70px);
-        transition: margin-left 0.3s ease;
+        margin-left: 70px;
+    }
+
+    /* NAVBAR */
+
+    .navbar {
+        height: 60px;
+        padding: 8px;
+        box-sizing: border-box;
+    }
+
+    .msg h2 {
+        font-size: 1rem;
+    }
+
+    .msg p {
+        font-size: .7rem;
+    }
+
+    .navbar a {
+        font-size: .7rem;
+        padding: 6px;
+    }
+
+    .navbar i {
+        font-size: .7rem;
+        margin-left: 5px;
     }
 
     /* CARDS */
 
     .info1 {
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(4, minmax(0, 1fr));
         gap: 8px;
         padding: 8px;
         box-sizing: border-box;
@@ -873,10 +895,12 @@ a:active{
     .result,
     .hostel {
         width: 100%;
-        height: 120px;
+        height: 115px;
+        min-width: 0;
         margin: 0;
-        padding: 5px;
+        padding: 6px;
         box-sizing: border-box;
+        border-radius: 10px;
     }
 
     .attandance i,
@@ -884,8 +908,8 @@ a:active{
     .courses i,
     .result i,
     .hostel i {
-        font-size: 1rem;
-        padding: 7px;
+        font-size: .9rem;
+        padding: 6px;
         margin-bottom: 5px;
     }
 
@@ -894,7 +918,7 @@ a:active{
     .courses h3,
     .result h3,
     .hostel h3 {
-        font-size: .75rem;
+        font-size: .68rem;
         text-align: center;
     }
 
@@ -903,20 +927,22 @@ a:active{
     .courses p,
     .result p,
     .hostel p {
-        font-size: .75rem !important;
+        font-size: .7rem !important;
         margin-top: 4px;
         padding: 0;
+        text-align: center;
     }
 
     .hostel {
         grid-column: 1 / -1;
-        width: 120px;
+        width: 115px;
         justify-self: center;
     }
 
     /* CLASSES + NOTICES */
 
     .info2 {
+        width: 100%;
         height: auto;
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -927,12 +953,7 @@ a:active{
 
     .classes {
         width: 100%;
-        height: 190px;
-        box-sizing: border-box;
-    }
-
-    .notices {
-        width: 100%;
+        height: 180px;
         box-sizing: border-box;
     }
 
@@ -940,16 +961,32 @@ a:active{
         font-size: 1rem;
     }
 
+    .select select {
+        width: 85px;
+        height: 27px;
+        font-size: .65rem;
+    }
+
+    .sub {
+        font-size: .7rem;
+        line-height: 1.25;
+    }
+
+    .notices {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
     .notices h3 {
-        font-size: 1.1rem;
+        font-size: 1.05rem;
     }
 
     .notices a {
-        font-size: .75rem;
+        font-size: .72rem;
     }
 
     .notices i {
-        font-size: .75rem;
+        font-size: .72rem;
     }
 
     /* QUICK ACTIONS */
@@ -961,7 +998,7 @@ a:active{
     }
 
     .info3 h3 {
-        font-size: 1.1rem;
+        font-size: 1.05rem;
     }
 
     .links {
@@ -971,13 +1008,13 @@ a:active{
     }
 
     .links a {
-        font-size: .75rem;
+        font-size: .72rem;
         padding: 7px;
         text-align: center;
     }
 
     .links i {
-        font-size: .8rem;
+        font-size: .75rem;
         margin-right: 4px;
     }
 }
