@@ -489,9 +489,9 @@ a:active{
     transition: all 2s ease;
 }
 
-/* PHONE + DESKTOP SITE MODE */
+/* NORMAL PHONE MODE */
 
-@media (pointer: coarse) and (min-width: 601px) {
+@media (max-width: 600px) {
 
     html,
     body {
@@ -504,9 +504,9 @@ a:active{
         position: fixed;
         top: 0;
         left: 0;
-        width: 58px;
+        width: 55px;
         height: 100vh;
-        padding: 4px;
+        padding: 5px;
         box-sizing: border-box;
         z-index: 1000;
         overflow: hidden;
@@ -514,7 +514,7 @@ a:active{
 
     .heading {
         width: 100%;
-        height: 58px;
+        height: 55px;
         padding: 0;
         justify-content: center;
     }
@@ -524,19 +524,18 @@ a:active{
     }
 
     .heading i {
-        font-size: .95rem;
+        font-size: 1rem;
         padding: 6px;
         margin: 0;
     }
 
     .panel a {
         width: 100%;
-        height: 42px;
-        box-sizing: border-box;
+        height: 43px;
         padding: 9px 3px;
         margin-bottom: 3px;
+        box-sizing: border-box;
         font-size: 0;
-        text-align: center;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -548,50 +547,48 @@ a:active{
     }
 
     .dashboard {
-        margin-left: 64px;
-        width: calc(100% - 64px);
-        min-height: 100vh;
+        width: calc(100% - 63px);
+        margin-left: 63px;
         box-sizing: border-box;
-        padding: 0;
     }
 
     .dashboard.reverse {
-        margin-left: 64px;
+        margin-left: 63px;
     }
 
     .navbar {
         width: 100%;
-        height: 52px;
-        padding: 6px 8px;
+        height: auto;
+        min-height: 60px;
+        padding: 7px;
         box-sizing: border-box;
         border-radius: 9px;
     }
 
     .msg h2 {
         font-size: .9rem;
-        padding: 0;
     }
 
     .msg p {
         font-size: .62rem;
-        padding: 2px 0;
+        margin-top: 3px;
     }
 
     .navbar a {
-        font-size: .62rem;
-        padding: 5px 6px;
+        font-size: .65rem;
+        padding: 5px;
         white-space: nowrap;
     }
 
     .navbar i {
-        font-size: .65rem;
         margin-left: 4px;
+        font-size: .7rem;
     }
 
     .info1 {
         display: grid;
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 6px;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 7px;
         padding: 7px;
         box-sizing: border-box;
     }
@@ -601,9 +598,8 @@ a:active{
     .courses,
     .result,
     .hostel {
-        width: auto;
-        height: 105px;
-        min-width: 0;
+        width: 100%;
+        height: 110px;
         margin: 0;
         padding: 5px;
         box-sizing: border-box;
@@ -615,9 +611,9 @@ a:active{
     .courses i,
     .result i,
     .hostel i {
-        font-size: .8rem;
-        padding: 5px;
-        margin-bottom: 4px;
+        font-size: .9rem;
+        padding: 6px;
+        margin-bottom: 5px;
     }
 
     .attandance h3,
@@ -625,9 +621,7 @@ a:active{
     .courses h3,
     .result h3,
     .hostel h3 {
-        font-size: .65rem;
-        margin: 0;
-        padding: 0;
+        font-size: .68rem;
         line-height: 1.1;
         text-align: center;
     }
@@ -637,21 +631,20 @@ a:active{
     .courses p,
     .result p,
     .hostel p {
-        font-size: .65rem;
-        margin: 3px 0 0;
+        font-size: .7rem;
+        margin-top: 4px;
         padding: 0;
-        line-height: 1.1;
     }
 
     .hostel {
         grid-column: 1 / -1;
-        width: 105px;
+        width: 110px;
         justify-self: center;
     }
 
     .info2 {
-        width: 100%;
         height: auto;
+        width: 100%;
         display: flex;
         flex-direction: column;
         gap: 7px;
@@ -661,16 +654,16 @@ a:active{
 
     .classes {
         width: 100%;
-        height: 125px;
+        height: 145px;
         padding: 7px;
         box-sizing: border-box;
         border-radius: 9px;
     }
 
     .classes h3 {
-        font-size: .95rem;
+        font-size: 1rem;
         padding: 4px;
-        margin-bottom: 5px;
+        margin-bottom: 6px;
     }
 
     .select {
@@ -679,14 +672,16 @@ a:active{
     }
 
     .select select {
-        width: 78px;
-        height: 25px;
+        width: 85px;
+        height: 27px;
         font-size: .65rem;
     }
 
     .sub {
-        font-size: .72rem;
+        font-size: .7rem;
         padding-left: 4px;
+        line-height: 1.25;
+        white-space: pre-line;
     }
 
     .notices {
@@ -699,7 +694,7 @@ a:active{
     .notices h3 {
         font-size: 1rem;
         padding: 4px;
-        margin-bottom: 7px;
+        margin-bottom: 8px;
     }
 
     .notices a {
@@ -729,16 +724,15 @@ a:active{
 
     .links {
         display: grid;
-        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-template-columns: repeat(2, 1fr);
         gap: 5px;
         padding: 5px;
     }
 
     .links a {
-        font-size: .65rem;
+        font-size: .68rem;
         padding: 7px 4px;
         text-align: center;
-        border-radius: 6px;
     }
 
     .links i {
@@ -748,23 +742,5 @@ a:active{
 
     .extra {
         height: 15px;
-    }
-
-    /* TOGGLE */
-
-    .panel.collapsed {
-        width: 50px;
-    }
-
-    .panel.collapsed .heading h2 {
-        display: none;
-    }
-
-    .panel.collapsed .link {
-        display: none;
-    }
-
-    .dashboard.reverse {
-        margin-left: 64px;
     }
 }
