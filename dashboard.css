@@ -489,13 +489,14 @@ a:active{
     transition: all 2s ease;
 }
 
-/* =====================================================
+/* =========================================================
    PROFESSIONAL RESPONSIVE DESIGN
-   NORMAL MOBILE + MOBILE DESKTOP SITE
-   ===================================================== */
+   ========================================================= */
 
 
-/* ================= NORMAL MOBILE ================= */
+/* =========================
+   NORMAL MOBILE
+   ========================= */
 
 @media (max-width: 600px) {
 
@@ -516,7 +517,6 @@ a:active{
         box-sizing: border-box;
         z-index: 1000;
         overflow: hidden;
-        transition: width 0.3s ease;
     }
 
     .heading {
@@ -553,52 +553,52 @@ a:active{
         margin: 0;
     }
 
-    .dashboard,
-    .dashboard.reverse {
-        width: calc(100% - 66px);
-        margin-left: 66px;
+    .dashboard {
+        width: calc(100% - 68px);
+        margin-left: 68px;
         box-sizing: border-box;
-        transition: margin-left 0.3s ease;
+    }
+
+    .dashboard.reverse {
+        margin-left: 68px;
     }
 
     /* NAVBAR */
 
     .navbar {
         width: 100%;
-        min-height: 62px;
+        min-height: 64px;
         height: auto;
         padding: 8px;
         box-sizing: border-box;
-        border-radius: 10px;
     }
 
     .msg h2 {
-        font-size: .9rem;
+        font-size: .95rem;
     }
 
     .msg p {
-        font-size: .62rem;
+        font-size: .65rem;
         margin-top: 3px;
     }
 
     .navbar a {
-        font-size: .62rem;
-        padding: 5px 6px;
-        white-space: nowrap;
+        font-size: .65rem;
+        padding: 6px;
     }
 
     .navbar i {
-        font-size: .7rem;
         margin-left: 4px;
+        font-size: .7rem;
     }
 
-    /* OVERVIEW CARDS */
+    /* CARDS */
 
     .info1 {
         display: grid;
         grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 7px;
-        padding: 7px;
+        gap: 8px;
+        padding: 8px;
         box-sizing: border-box;
     }
 
@@ -608,12 +608,10 @@ a:active{
     .result,
     .hostel {
         width: 100%;
-        height: 110px;
-        min-width: 0;
+        height: 115px;
         margin: 0;
         padding: 6px;
         box-sizing: border-box;
-        border-radius: 10px;
     }
 
     .attandance i,
@@ -622,8 +620,8 @@ a:active{
     .result i,
     .hostel i {
         font-size: .9rem;
-        padding: 6px;
-        margin-bottom: 5px;
+        padding: 7px;
+        margin-bottom: 6px;
     }
 
     .attandance h3,
@@ -631,11 +629,10 @@ a:active{
     .courses h3,
     .result h3,
     .hostel h3 {
-        font-size: .68rem;
+        font-size: .72rem;
         line-height: 1.1;
         text-align: center;
         margin: 0;
-        padding: 0;
     }
 
     .attandance p,
@@ -643,16 +640,16 @@ a:active{
     .courses p,
     .result p,
     .hostel p {
-        font-size: .7rem !important;
-        line-height: 1.1;
-        margin-top: 4px;
+        font-size: .72rem !important;
+        margin-top: 5px;
         padding: 0;
+        line-height: 1.1;
         text-align: center;
     }
 
     .hostel {
         grid-column: 1 / -1;
-        width: 50%;
+        width: 52%;
         justify-self: center;
     }
 
@@ -663,110 +660,98 @@ a:active{
         height: auto;
         display: flex;
         flex-direction: column;
-        gap: 7px;
-        padding: 0 7px 7px;
+        gap: 8px;
+        padding: 0 8px 8px;
         box-sizing: border-box;
     }
 
     .classes {
         width: 100%;
-        height: 145px;
-        padding: 8px;
+        height: 165px;
+        padding: 9px;
         box-sizing: border-box;
-        border-radius: 10px;
     }
 
     .classes h3 {
-        font-size: 1rem;
+        font-size: 1.05rem;
         padding: 4px;
-        margin-bottom: 6px;
-    }
-
-    .select {
-        width: 100%;
-        align-items: center;
+        margin-bottom: 7px;
     }
 
     .select select {
-        width: 88px;
-        height: 27px;
-        font-size: .65rem;
+        width: 90px;
+        height: 28px;
+        font-size: .68rem;
     }
 
     .sub {
-        font-size: .68rem;
-        line-height: 1.25;
-        padding-left: 4px;
+        font-size: .72rem;
+        line-height: 1.3;
+        padding-left: 5px;
         white-space: pre-line;
     }
 
     .notices {
         width: 100%;
-        padding: 8px;
+        padding: 9px;
         box-sizing: border-box;
-        border-radius: 10px;
     }
 
     .notices h3 {
-        font-size: 1rem;
+        font-size: 1.05rem;
         padding: 4px;
-        margin-bottom: 8px;
+        margin-bottom: 9px;
     }
 
     .notices a {
-        font-size: .68rem;
-        padding: 3px;
+        font-size: .72rem;
     }
 
     .notices i {
-        font-size: .7rem;
-        padding: 3px;
-        margin-right: 3px;
+        font-size: .72rem;
     }
 
     /* QUICK ACTIONS */
 
     .info3 {
-        width: calc(100% - 14px);
+        width: calc(100% - 16px);
         height: auto;
-        margin: 0 7px 7px;
-        padding: 8px;
+        margin: 0 8px 8px;
+        padding: 9px;
         box-sizing: border-box;
-        border-radius: 10px;
     }
 
     .info3 h3 {
-        font-size: 1rem;
-        padding: 3px;
+        font-size: 1.05rem;
     }
 
     .links {
         display: grid;
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 5px;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 6px;
         padding: 5px;
     }
 
     .links a {
-        font-size: .68rem;
-        padding: 7px 4px;
+        font-size: .72rem;
+        padding: 8px 4px;
         text-align: center;
     }
 
     .links i {
-        font-size: .7rem;
-        margin-right: 3px;
+        font-size: .72rem;
+        margin-right: 4px;
     }
 
     .extra {
-        height: 15px;
+        height: 20px;
     }
 }
 
 
-/* =====================================================
-   MOBILE PHONE USING CHROME "DESKTOP SITE"
-   ===================================================== */
+/* =========================================================
+   CHROME MOBILE - DESKTOP SITE
+   ========================================================= */
 
 @media (pointer: coarse) and (min-width: 601px) {
 
@@ -783,55 +768,55 @@ a:active{
         position: fixed;
         top: 0;
         left: 0;
-        width: 210px;
+        width: 190px;
         height: 100vh;
-        padding: 8px;
+        padding: 10px;
         box-sizing: border-box;
         z-index: 1000;
         overflow-y: auto;
-        transition: width 0.3s ease;
+        transition: width .3s ease;
     }
 
     .heading {
         width: 90%;
         height: 75px;
-        padding: 8px;
+        padding: 10px;
     }
 
     .heading h2 {
         display: block;
-        font-size: 1.15rem;
+        font-size: 1.05rem;
     }
 
     .heading i {
-        font-size: .95rem;
-        padding: 6px;
+        font-size: .9rem;
+        padding: 7px;
     }
 
     .panel a {
-        font-size: .85rem;
-        padding: 9px;
-        margin-bottom: 2px;
+        font-size: .78rem;
+        padding: 10px 8px;
+        margin-bottom: 3px;
     }
 
     .panel i {
-        font-size: .95rem;
-        margin-right: 7px;
+        font-size: .9rem;
+        margin-right: 8px;
     }
 
     /* DASHBOARD */
 
     .dashboard {
-        width: calc(100% - 225px);
-        margin-left: 225px;
+        width: calc(100% - 210px);
+        margin-left: 210px;
         box-sizing: border-box;
-        transition: margin-left 0.3s ease;
+        transition: margin-left .3s ease;
     }
 
     /* COLLAPSED SIDEBAR */
 
     .panel.collapsed {
-        width: 55px;
+        width: 58px;
     }
 
     .panel.collapsed .heading {
@@ -849,43 +834,45 @@ a:active{
     }
 
     .dashboard.reverse {
-        width: calc(100% - 70px);
-        margin-left: 70px;
+        width: calc(100% - 78px);
+        margin-left: 78px;
     }
 
     /* NAVBAR */
 
     .navbar {
-        height: 60px;
-        padding: 8px;
+        width: 100%;
+        height: 72px;
+        padding: 10px 14px;
         box-sizing: border-box;
     }
 
     .msg h2 {
-        font-size: 1rem;
+        font-size: 1.15rem;
     }
 
     .msg p {
-        font-size: .7rem;
+        font-size: .75rem;
+        margin-top: 3px;
     }
 
     .navbar a {
-        font-size: .7rem;
-        padding: 6px;
+        font-size: .75rem;
+        padding: 7px 9px;
     }
 
     .navbar i {
-        font-size: .7rem;
-        margin-left: 5px;
+        font-size: .75rem;
+        margin-left: 6px;
     }
 
-    /* CARDS */
+    /* FIVE PROFESSIONAL CARDS */
 
     .info1 {
         display: grid;
-        grid-template-columns: repeat(4, minmax(0, 1fr));
-        gap: 8px;
-        padding: 8px;
+        grid-template-columns: repeat(5, minmax(0, 1fr));
+        gap: 10px;
+        padding: 12px;
         box-sizing: border-box;
     }
 
@@ -895,12 +882,12 @@ a:active{
     .result,
     .hostel {
         width: 100%;
-        height: 115px;
+        height: 145px;
         min-width: 0;
         margin: 0;
-        padding: 6px;
+        padding: 8px;
         box-sizing: border-box;
-        border-radius: 10px;
+        border-radius: 12px;
     }
 
     .attandance i,
@@ -908,9 +895,9 @@ a:active{
     .courses i,
     .result i,
     .hostel i {
-        font-size: .9rem;
-        padding: 6px;
-        margin-bottom: 5px;
+        font-size: 1.1rem;
+        padding: 8px;
+        margin-bottom: 8px;
     }
 
     .attandance h3,
@@ -918,8 +905,10 @@ a:active{
     .courses h3,
     .result h3,
     .hostel h3 {
-        font-size: .68rem;
+        font-size: .8rem;
+        line-height: 1.2;
         text-align: center;
+        margin: 0;
     }
 
     .attandance p,
@@ -927,94 +916,118 @@ a:active{
     .courses p,
     .result p,
     .hostel p {
-        font-size: .7rem !important;
-        margin-top: 4px;
+        font-size: .85rem !important;
+        margin-top: 7px;
         padding: 0;
+        line-height: 1.2;
         text-align: center;
-    }
-
-    .hostel {
-        grid-column: 1 / -1;
-        width: 115px;
-        justify-self: center;
     }
 
     /* CLASSES + NOTICES */
 
     .info2 {
         width: 100%;
-        height: auto;
+        height: 250px;
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 8px;
-        padding: 8px;
+        grid-template-columns: 1.2fr 1fr;
+        gap: 10px;
+        padding: 0 12px 12px;
         box-sizing: border-box;
     }
 
     .classes {
         width: 100%;
-        height: 180px;
+        height: 238px;
+        padding: 12px;
         box-sizing: border-box;
+        border-radius: 12px;
     }
 
     .classes h3 {
-        font-size: 1rem;
+        font-size: 1.25rem;
+        padding: 6px;
+        margin-bottom: 10px;
+    }
+
+    .select {
+        align-items: center;
     }
 
     .select select {
-        width: 85px;
-        height: 27px;
-        font-size: .65rem;
+        width: 105px;
+        height: 32px;
+        font-size: .75rem;
     }
 
     .sub {
-        font-size: .7rem;
-        line-height: 1.25;
+        font-size: .82rem;
+        line-height: 1.35;
+        padding-left: 7px;
+        white-space: pre-line;
     }
 
     .notices {
         width: 100%;
+        height: 238px;
+        padding: 12px;
         box-sizing: border-box;
+        border-radius: 12px;
     }
 
     .notices h3 {
-        font-size: 1.05rem;
+        font-size: 1.25rem;
+        padding: 6px;
+        margin-bottom: 12px;
     }
 
     .notices a {
-        font-size: .72rem;
+        font-size: .82rem;
+        padding: 5px;
     }
 
     .notices i {
-        font-size: .72rem;
+        font-size: .8rem;
+        padding: 5px;
+        margin-right: 5px;
     }
 
     /* QUICK ACTIONS */
 
     .info3 {
+        width: calc(100% - 24px);
+        min-height: 145px;
         height: auto;
-        margin: 8px;
+        margin: 0 12px 12px;
+        padding: 12px;
         box-sizing: border-box;
+        border-radius: 12px;
     }
 
     .info3 h3 {
-        font-size: 1.05rem;
+        font-size: 1.2rem;
+        padding: 5px;
     }
 
     .links {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 7px;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 8px;
+        padding: 8px;
     }
 
     .links a {
-        font-size: .72rem;
-        padding: 7px;
+        font-size: .8rem;
+        padding: 10px 6px;
         text-align: center;
+        border-radius: 8px;
     }
 
     .links i {
-        font-size: .75rem;
-        margin-right: 4px;
+        font-size: .8rem;
+        margin-right: 5px;
+    }
+
+    .extra {
+        height: 30px;
     }
 }
