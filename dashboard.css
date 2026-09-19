@@ -489,13 +489,9 @@ a:active{
     transition: all 2s ease;
 }
 
+/* PHONE + DESKTOP SITE MODE */
 
-
-/* ============================= */
-/* FINAL MOBILE DESIGN */
-/* ============================= */
-
-@media (max-width: 600px) {
+@media (pointer: coarse) and (min-width: 601px) {
 
     html,
     body {
@@ -504,13 +500,10 @@ a:active{
         overflow-x: hidden;
     }
 
-    /* SIDEBAR */
-
     .panel {
         position: fixed;
         top: 0;
         left: 0;
-        bottom: 0;
         width: 58px;
         height: 100vh;
         padding: 4px;
@@ -531,369 +524,7 @@ a:active{
     }
 
     .heading i {
-        font-size: 0.95rem;
-        padding: 6px;
-        margin: 0;
-    }
-
-    .panel a {
-        width: 100%;
-        height: 42px;
-        box-sizing: border-box;
-        padding: 9px 3px;
-        margin-bottom: 3px;
-        font-size: 0;
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 7px;
-    }
-
-    .panel a i {
-        font-size: 1rem;
-        margin: 0;
-    }
-
-    /* MAIN DASHBOARD */
-
-    .dashboard {
-        margin-left: 64px;
-        width: calc(100% - 64px);
-        min-height: 100vh;
-        box-sizing: border-box;
-        padding: 0;
-    }
-
-    /* NAVBAR */
-
-    .navbar {
-        width: 100%;
-        height: 52px;
-        padding: 6px 8px;
-        box-sizing: border-box;
-        border-radius: 9px;
-    }
-
-    .msg h2 {
-        font-size: 0.9rem;
-        padding: 0;
-    }
-
-    .msg p {
-        font-size: 0.62rem;
-        padding: 2px 0;
-    }
-
-    .navbar a {
-        font-size: 0.62rem;
-        padding: 5px 6px;
-        border-width: 1px;
-        white-space: nowrap;
-    }
-
-    .navbar i {
-        font-size: 0.65rem;
-        margin-left: 4px;
-    }
-
-    /* STATISTIC CARDS */
-
-    .info1 {
-        display: grid;
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 6px;
-        padding: 7px;
-        box-sizing: border-box;
-    }
-
-    .attandance,
-    .dues,
-    .courses,
-    .result,
-    .hostel {
-        width: auto;
-        height: 105px;
-        min-width: 0;
-        margin: 0;
-        padding: 5px;
-        box-sizing: border-box;
-        border-radius: 9px;
-    }
-
-    .attandance i,
-    .dues i,
-    .courses i,
-    .result i,
-    .hostel i {
-        font-size: 0.95rem;
-        padding: 6px;
-        margin-bottom: 5px;
-        border-radius: 6px;
-    }
-
-    .attandance h3,
-    .dues h3,
-    .courses h3,
-    .result h3,
-    .hostel h3 {
-        font-size: 0.72rem;
-        text-align: center;
-    }
-
-    .attandance p,
-    .dues p,
-    .courses p,
-    .result p {
-        font-size: 0.9rem;
-        margin-top: 3px;
-        padding: 2px;
-    }
-
-    /* HOSTEL CENTERED */
-
-    .hostel {
-        grid-column: 1 / -1;
-        width: 105px;
-        justify-self: center;
-    }
-
-    .hostel a {
-        font-size: 0.65rem;
-        margin-top: 3px;
-        padding: 2px;
-    }
-
-    /* UPCOMING CLASSES + NOTICES */
-
-    .info2 {
-        width: 100%;
-        height: auto;
-        display: flex;
-        flex-direction: column;
-        gap: 7px;
-        padding: 0 7px 7px;
-        box-sizing: border-box;
-    }
-
-    .classes {
-        width: 100%;
-        height: 125px;
-        padding: 7px;
-        box-sizing: border-box;
-        border-radius: 9px;
-    }
-
-    .classes h3 {
-        font-size: 0.95rem;
-        padding: 4px;
-        margin-bottom: 5px;
-    }
-
-    .select {
-        width: 100%;
-        align-items: center;
-    }
-
-    .select select {
-        width: 78px;
-        height: 25px;
-        font-size: 0.65rem;
-        border-width: 1px;
-    }
-
-    .sub {
-        font-size: 0.72rem;
-        padding-left: 4px;
-    }
-
-    /* NOTICES */
-
-    .notices {
-        width: 100%;
-        padding: 7px;
-        box-sizing: border-box;
-        border-radius: 9px;
-    }
-
-    .notices h3 {
-        font-size: 1rem;
-        padding: 4px;
-        margin-bottom: 7px;
-    }
-
-    .notices a {
-        font-size: 0.68rem;
-        padding: 3px;
-        border-width: 1px;
-    }
-
-    .notices i {
-        font-size: 0.7rem;
-        padding: 3px;
-        margin-right: 3px;
-    }
-
-    /* QUICK ACTIONS */
-
-    .info3 {
-        width: calc(100% - 14px);
-        height: auto;
-        margin: 0 7px 7px;
-        padding: 8px;
-        box-sizing: border-box;
-        border-radius: 9px;
-    }
-
-    .info3 h3 {
-        font-size: 1rem;
-        padding: 3px;
-    }
-
-    .links {
-        display: grid;
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 5px;
-        padding: 5px;
-    }
-
-    .links a {
-        font-size: 0.65rem;
-        padding: 7px 4px;
-        text-align: center;
-        border-radius: 6px;
-    }
-
-    .links i {
-        font-size: 0.7rem;
-        margin-right: 3px;
-    }
-
-    /* REMOVE EXTRA EMPTY SPACE */
-
-    .extra {
-        height: 15px;
-    }
-}
-
-
-/* ============================= */
-/* VERY SMALL PHONES */
-/* ============================= */
-
-@media (max-width: 380px) {
-
-    .panel {
-        width: 52px;
-    }
-
-    .dashboard {
-        margin-left: 57px;
-        width: calc(100% - 57px);
-    }
-
-    .panel a {
-        height: 39px;
-    }
-
-    .panel a i {
-        font-size: 0.9rem;
-    }
-
-    .navbar {
-        height: 50px;
-    }
-
-    .msg h2 {
-        font-size: 0.8rem;
-    }
-
-    .msg p {
-        font-size: 0.55rem;
-    }
-
-    .navbar a {
-        font-size: 0.55rem;
-        padding: 4px;
-    }
-
-    .attandance,
-    .dues,
-    .courses,
-    .result {
-        height: 98px;
-    }
-
-    .hostel {
-        height: 98px;
-    }
-
-    .attandance h3,
-    .dues h3,
-    .courses h3,
-    .result h3,
-    .hostel h3 {
-        font-size: 0.65rem;
-    }
-
-    .attandance p,
-    .dues p,
-    .courses p,
-    .result p {
-        font-size: 0.8rem;
-    }
-
-    .classes {
-        height: 115px;
-    }
-
-    .notices a {
-        font-size: 0.62rem;
-    }
-
-    .links a {
-        font-size: 0.6rem;
-    }
-}
-
-/* ============================= */
-/* PHONE DESKTOP MODE FIX */
-/* ============================= */
-
-@media (min-width: 601px) and (max-width: 1100px) {
-
-    html,
-    body {
-        width: 100%;
-        min-height: 100%;
-        overflow-x: hidden;
-    }
-
-    .panel {
-        position: fixed;
-        left: 0;
-        top: 0;
-        width: 58px;
-        height: 100vh;
-        padding: 4px;
-        box-sizing: border-box;
-        z-index: 1000;
-        overflow: hidden;
-    }
-
-    .heading {
-        width: 100%;
-        height: 58px;
-        padding: 0;
-        justify-content: center;
-    }
-
-    .heading h2 {
-        display: none;
-    }
-
-    .heading i {
-        font-size: 0.95rem;
+        font-size: .95rem;
         padding: 6px;
         margin: 0;
     }
@@ -937,23 +568,23 @@ a:active{
     }
 
     .msg h2 {
-        font-size: 0.9rem;
+        font-size: .9rem;
         padding: 0;
     }
 
     .msg p {
-        font-size: 0.62rem;
+        font-size: .62rem;
         padding: 2px 0;
     }
 
     .navbar a {
-        font-size: 0.62rem;
+        font-size: .62rem;
         padding: 5px 6px;
         white-space: nowrap;
     }
 
     .navbar i {
-        font-size: 0.65rem;
+        font-size: .65rem;
         margin-left: 4px;
     }
 
@@ -984,9 +615,9 @@ a:active{
     .courses i,
     .result i,
     .hostel i {
-        font-size: 0.95rem;
-        padding: 6px;
-        margin-bottom: 5px;
+        font-size: .8rem;
+        padding: 5px;
+        margin-bottom: 4px;
     }
 
     .attandance h3,
@@ -994,17 +625,22 @@ a:active{
     .courses h3,
     .result h3,
     .hostel h3 {
-        font-size: 0.72rem;
+        font-size: .65rem;
+        margin: 0;
+        padding: 0;
+        line-height: 1.1;
         text-align: center;
     }
 
     .attandance p,
     .dues p,
     .courses p,
-    .result p {
-        font-size: 0.9rem;
-        margin-top: 3px;
-        padding: 2px;
+    .result p,
+    .hostel p {
+        font-size: .65rem;
+        margin: 3px 0 0;
+        padding: 0;
+        line-height: 1.1;
     }
 
     .hostel {
@@ -1032,7 +668,7 @@ a:active{
     }
 
     .classes h3 {
-        font-size: 0.95rem;
+        font-size: .95rem;
         padding: 4px;
         margin-bottom: 5px;
     }
@@ -1045,11 +681,11 @@ a:active{
     .select select {
         width: 78px;
         height: 25px;
-        font-size: 0.65rem;
+        font-size: .65rem;
     }
 
     .sub {
-        font-size: 0.72rem;
+        font-size: .72rem;
         padding-left: 4px;
     }
 
@@ -1067,12 +703,12 @@ a:active{
     }
 
     .notices a {
-        font-size: 0.68rem;
+        font-size: .68rem;
         padding: 3px;
     }
 
     .notices i {
-        font-size: 0.7rem;
+        font-size: .7rem;
         padding: 3px;
         margin-right: 3px;
     }
@@ -1099,50 +735,36 @@ a:active{
     }
 
     .links a {
-        font-size: 0.65rem;
+        font-size: .65rem;
         padding: 7px 4px;
         text-align: center;
         border-radius: 6px;
     }
 
     .links i {
-        font-size: 0.7rem;
+        font-size: .7rem;
         margin-right: 3px;
     }
 
     .extra {
         height: 15px;
     }
-}
 
-@media (pointer: coarse) and (min-width: 601px) {
+    /* TOGGLE */
 
-    .info1 .hostel {
-        width: 105px !important;
-        height: 105px !important;
-        padding: 5px !important;
-        margin: 0 !important;
-        box-sizing: border-box !important;
-        overflow: hidden !important;
+    .panel.collapsed {
+        width: 50px;
     }
 
-    .info1 .hostel i {
-        font-size: .8rem !important;
-        padding: 5px !important;
-        margin: 0 0 4px 0 !important;
+    .panel.collapsed .heading h2 {
+        display: none;
     }
 
-    .info1 .hostel h3 {
-        font-size: .65rem !important;
-        margin: 0 !important;
-        padding: 0 !important;
-        line-height: 1.1 !important;
+    .panel.collapsed .link {
+        display: none;
     }
 
-    .info1 .hostel p {
-        font-size: .65rem !important;
-        margin: 3px 0 0 0 !important;
-        padding: 0 !important;
-        line-height: 1.1 !important;
+    .dashboard.reverse {
+        margin-left: 64px;
     }
 }
