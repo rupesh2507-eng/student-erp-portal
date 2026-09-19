@@ -510,4 +510,21 @@ button:hover{
         font-size: .78rem;
         border-radius: 9px;
     }
+
+    .info pre:nth-last-child(2),
+.info pre:last-child {
+    grid-column: 2;
+    width: 100%;
+    min-height: 31px;
+    margin: 0;
+    padding: 6px 9px;
+    font-size: .78rem;
+    line-height: 1.35;
+    box-sizing: border-box;
+    white-space: normal;
+    overflow-wrap: anywhere;
+    border-left: 2px solid #D9E2EC;
+    border-bottom: 1px solid #D9E2EC;
+    border-radius: 6px;
+}
 }
