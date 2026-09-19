@@ -1157,3 +1157,35 @@ a:active{
     }
 
 }
+
+@media (min-width: 601px) and (max-width: 1100px) {
+
+    .info1 .hostel {
+        width: 105px !important;
+        height: 105px !important;
+        padding: 5px !important;
+        margin: 0 !important;
+        box-sizing: border-box !important;
+        overflow: hidden !important;
+    }
+
+    .info1 .hostel i {
+        font-size: 0.8rem !important;
+        padding: 5px !important;
+        margin: 0 0 4px 0 !important;
+    }
+
+    .info1 .hostel h3 {
+        font-size: 0.65rem !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        line-height: 1.1 !important;
+    }
+
+    .info1 .hostel p {
+        font-size: 0.65rem !important;
+        margin: 3px 0 0 0 !important;
+        padding: 0 !important;
+        line-height: 1.1 !important;
+    }
+}
